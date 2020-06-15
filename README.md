@@ -44,3 +44,6 @@ liks of reference:
 https://github.com/sauravraghuvanshi/Udacity-programming-for-Data-Science-With-Python-Nanodegree
 https://git-scm.com/docs/git-status
 https://softwareengineering.stackexchange.com/questions/119782/what-does-stage-mean-in-git#:~:text=To%20stage%20a%20file%20is,still%20needs%20some%20work%20done.
+https://stackoverflow.com/questions/47204309/what-does-git-checkout-do
+https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html
+https://stackoverflow.com/questions/14680711/how-to-do-a-github-pull-request
