@@ -1,10 +1,10 @@
-### Date created
+#### Date created
 15th June 2020
 
 ### Project Title
-Github:Udacity-Python-For_Data-Science-Nanodegree-Program
+# Github:Udacity-Python-For_Data-Science-Nanodegree-Program
 
-#### Description
+### Description
 This Project is all about the learning of version control using the Bikeshare Project.
 In the previous project we did ananlysis of three files of bikeshare data.
 And using those files and output file we will be working on version control i.e Github
@@ -16,7 +16,7 @@ In this project, you will make use of Python to explore data related to bike sha
 You will write code to import the data and answer interesting questions about it by computing descriptive statistics. 
 You will also write a script that takes in raw input to create an interactive experience in the terminal to present these statistics.
 
-# What Software Do I Need?
+### What Software Do I Need?
 
 To complete this project, the following software requirements apply:
 
@@ -35,7 +35,7 @@ with the help of csv files and names of file are given below:
 4. bikeshare.py
 5. .gitignore
 
-#### Credits
+### Credits
 To complete this project i used various blogs and github repos and questions asked on
 stackoverflow were very helpful.
 
