@@ -30,7 +30,7 @@ def get_filters():
         print('Invalid Month Name!! Please select month out of january,fabruary,march,april,may,june or all.')
         month = input('Select the month you want to analyse:').lower()
 
-    
+
 
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
     day_list=['monday','tuesday','wednesday','thursday','friday','saturday','sunday','all']
@@ -65,7 +65,7 @@ def load_data(city, month, day):
     #extract month from Start Time to create new column
     df['month'] = df['Start Time'].dt.month
     #extract week day from Start Time to create new column
-    df['week_day'] = df['Start Time'].dt.weekday_name 
+    df['week_day'] = df['Start Time'].dt.weekday_name
 
 
     #filter by month if applicable!!
@@ -119,13 +119,13 @@ def station_stats(df,city):
     # TO DO: display most commonly used start station
     common_start_station = df['Start Station'].mode()[0]
     print('The most commonly used start staion is:',common_start_station)
-    
-        
+
+
     # TO DO: display most commonly used end station
     common_end_station = df['End Station'].mode()[0]
     print('The most commonly used end staion is:',common_end_station)
 
-    
+
     # TO DO: display most frequent combination of start station and end station trip
     df['combine_start_end'] = df['Start Station']+ " " + df['End Station']
     print('The most frequent combination of start station and end station trip:',df['combine_start_end'].mode().values[0])
@@ -144,7 +144,7 @@ def trip_duration_stats(df,city):
     # TO DO: display total travel time
     df['total_travel'] = df['End Time'] - df['Start Time']
     print('The total travel time:',df['total_travel'].sum())
-    
+
 
 
     # TO DO: display mean travel time
@@ -157,7 +157,7 @@ def trip_duration_stats(df,city):
 
 def user_stats(df,city):
     """Displays statistics on bikeshare users."""
-    
+
     print('\nCalculating User Stats...\n')
     start_time = time.time()
     if city != 'washington':
@@ -190,7 +190,7 @@ def user_stats(df,city):
     else:
         print("No user data found for washington city !!!!")
 
-    
+
 def display_raw_data(df,city):
     """Display the raw data requested by the user."""
 
@@ -209,14 +209,14 @@ def display_raw_data(df,city):
             again_ask = input("Do you want to see raw data again?:").lower()
             if again_ask == 'no':
                 break
-        
-    
-    
+
+
+
 def main():
     while True:
         city, month, day = get_filters()
         df = load_data(city, month, day)
-
+        #making function calls
         time_stats(df,city)
         station_stats(df,city)
         trip_duration_stats(df,city)
